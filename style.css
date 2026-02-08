@@ -386,3 +386,99 @@ footer {
     color: #666;
     font-size: 0.9rem;
 }
+
+/* =================================
+   スマホ対応（768px以下）
+   ================================= */
+@media screen and (max-width: 768px) {
+    /* ヘッダー */
+    header {
+        padding: 40px 15px;
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    header .subtitle {
+        font-size: 1rem;
+    }
+
+    /* ナビゲーション */
+    nav {
+        padding: 10px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 5px 8px;
+        font-size: 0.9rem;
+    }
+
+    /* メインコンテンツ */
+    main {
+        padding: 20px 15px;
+    }
+
+    section {
+        padding: 20px 15px;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+
+    h3 {
+        font-size: 1.1rem;
+    }
+
+    /* 年表（縦並びに変更） */
+    .timeline-item {
+        flex-direction: column;
+    }
+
+    .year {
+        margin-bottom: 8px;
+    }
+
+    /* テーブル（横スクロール対応） */
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    th, td {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+
+    /* カード類 */
+    .tool-card,
+    .person-card,
+    .challenge-card,
+    .example {
+        padding: 15px;
+    }
+
+    /* コラム */
+    .column-article {
+        padding: 20px 15px;
+    }
+
+    .column-lead {
+        font-size: 1rem;
+        padding-left: 15px;
+    }
+
+    .sf-work {
+        padding: 15px;
+    }
+
+    /* タグ */
+    .tag {
+        font-size: 0.8rem;
+        padding: 3px 10px;
+        margin-bottom: 5px;
+    }
+}
