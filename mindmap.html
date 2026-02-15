@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>関連分野マップ - デジタル民主主義</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+    <style>
+        .mindmap-container {
+            background: white;
+            border-radius: 8px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            overflow-x: auto;
+        }
+        .mermaid {
+            display: flex;
+            justify-content: center;
+        }
+        .field-description {
+            margin-top: 30px;
+        }
+        .field-card {
+            background: #f8f9fa;
+            border-left: 4px solid #3498db;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 0 8px 8px 0;
+        }
+        .field-card h3 {
+            margin-bottom: 10px;
+        }
+        .field-card.politics { border-left-color: #e74c3c; }
+        .field-card.info { border-left-color: #3498db; }
+        .field-card.law { border-left-color: #9b59b6; }
+        .field-card.sociology { border-left-color: #27ae60; }
+        .field-card.economics { border-left-color: #f39c12; }
+        .field-card.philosophy { border-left-color: #1abc9c; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>関連分野マップ</h1>
+        <p class="subtitle">デジタル民主主義を支える学問領域</p>
+    </header>
+
+    <nav>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="nav-menu">
+            <a href="index.html">トップ</a>
+            <a href="history.html">歴史・年表</a>
+            <a href="tools.html">ツール</a>
+            <a href="japan.html">日本の事例</a>
+            <a href="challenges.html">課題</a>
+            <a href="people.html">人物</a>
+            <a href="column.html">コラム</a>
+            <a href="mindmap.html">関連分野</a>
+        </div>
+    </nav>
+
+    <main>
+        <section>
+            <h2>デジタル民主主義の学際的マップ</h2>
+            <p>
+                デジタル民主主義は、複数の学問分野が交差する領域です。
+                以下のマップは、関連する主要な分野とその研究テーマを示しています。
+            </p>
+        </section>
+
+        <div class="mindmap-container">
+            <pre class="mermaid">
+mindmap
+  root((デジタル民主主義))
+    政治学
+      民主主義理論
+      政治参加論
+      電子投票
+      熟議民主主義
+      政策形成過程
+    情報学
+      AI・機械学習
+      セキュリティ
+      HCI（人間とコンピュータの相互作用）
+      データサイエンス
+      ブロックチェーン
+    法学
+      憲法・選挙法
+      個人情報保護
+      サイバー法
+      知的財産権
+      国際法
+    社会学
+      市民社会論
+      社会運動
+      デジタルデバイド
+      世論形成
+      コミュニティ研究
+    経済学
+      公共経済学
+      行動経済学
+      シェアリングエコノミー
+      プラットフォーム経済
+    哲学・倫理学
+      政治哲学
+      情報倫理
+      テクノロジー倫理
+      公共性の理論
+            </pre>
+        </div>
+
+        <section class="field-description">
+            <h2>各分野の詳細</h2>
+
+            <div class="field-card politics">
+                <h3>政治学</h3>
+                <p>
+                    民主主義の理論と実践を研究する分野。デジタル技術が政治参加や
+                    意思決定プロセスにどのような影響を与えるかを分析します。
+                </p>
+                <ul>
+                    <li><strong>民主主義理論:</strong> 直接民主制、代議制、熟議民主主義など</li>
+                    <li><strong>政治参加論:</strong> 投票行動、市民参加の形態</li>
+                    <li><strong>電子投票:</strong> オンライン投票システムの設計と課題</li>
+                </ul>
+            </div>
+
+            <div class="field-card info">
+                <h3>情報学</h3>
+                <p>
+                    デジタル民主主義を技術的に支える分野。プラットフォームの設計、
+                    セキュリティ、AIの活用などを研究します。
+                </p>
+                <ul>
+                    <li><strong>AI・機械学習:</strong> 意見分析、フェイクニュース検出</li>
+                    <li><strong>セキュリティ:</strong> 投票システムの安全性、プライバシー保護</li>
+                    <li><strong>HCI:</strong> 使いやすい市民参加ツールの設計</li>
+                </ul>
+            </div>
+
+            <div class="field-card law">
+                <h3>法学</h3>
+                <p>
+                    デジタル民主主義の法的枠組みを研究する分野。選挙制度、
+                    個人情報保護、表現の自由などの法的課題を扱います。
+                </p>
+                <ul>
+                    <li><strong>憲法・選挙法:</strong> 電子投票の合憲性、選挙制度改革</li>
+                    <li><strong>個人情報保護:</strong> GDPR、データ主権</li>
+                    <li><strong>サイバー法:</strong> オンライン上の権利と義務</li>
+                </ul>
+            </div>
+
+            <div class="field-card sociology">
+                <h3>社会学</h3>
+                <p>
+                    デジタル技術が社会構造や市民生活に与える影響を研究します。
+                    デジタルデバイドや社会運動の変容などを分析します。
+                </p>
+                <ul>
+                    <li><strong>市民社会論:</strong> NGO、NPOの役割</li>
+                    <li><strong>デジタルデバイド:</strong> 情報格差と社会的排除</li>
+                    <li><strong>社会運動:</strong> オンライン署名、SNS運動</li>
+                </ul>
+            </div>
+
+            <div class="field-card economics">
+                <h3>経済学</h3>
+                <p>
+                    公共財としてのデジタルインフラ、プラットフォームの経済効果などを研究します。
+                </p>
+                <ul>
+                    <li><strong>公共経済学:</strong> 電子政府の費用対効果</li>
+                    <li><strong>行動経済学:</strong> ナッジ、市民の意思決定</li>
+                    <li><strong>プラットフォーム経済:</strong> GAFAと民主主義の関係</li>
+                </ul>
+            </div>
+
+            <div class="field-card philosophy">
+                <h3>哲学・倫理学</h3>
+                <p>
+                    デジタル民主主義の根本的な価値や倫理的課題を考察します。
+                </p>
+                <ul>
+                    <li><strong>政治哲学:</strong> 正義論、公共性の概念</li>
+                    <li><strong>情報倫理:</strong> AI倫理、アルゴリズムの公平性</li>
+                    <li><strong>テクノロジー倫理:</strong> 技術決定論への批判</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>分野横断的なテーマ</h2>
+            <p>
+                デジタル民主主義の研究では、以下のような分野横断的なテーマが重要になっています：
+            </p>
+            <ul>
+                <li><strong>シビックテック:</strong> 情報学 × 政治学 × 社会学</li>
+                <li><strong>AIガバナンス:</strong> 情報学 × 法学 × 倫理学</li>
+                <li><strong>デジタル・シティズンシップ:</strong> 教育学 × 政治学 × 社会学</li>
+                <li><strong>オープンガバメント:</strong> 政治学 × 情報学 × 経済学</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 デジタル民主主義情報サイト</p>
+    </footer>
+    <button class="dark-mode-toggle">🌙</button>
+    <script>
+        mermaid.initialize({
+            startOnLoad: true,
+            theme: 'default',
+            mindmap: {
+                padding: 20,
+                useMaxWidth: true
+            }
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
