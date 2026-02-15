@@ -546,3 +546,96 @@ footer {
         margin-bottom: 5px;
     }
 }
+
+/* =================================
+   ダークモード切替ボタン
+   ================================= */
+.dark-mode-toggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    background: #2c3e50;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s, background 0.3s;
+    z-index: 1000;
+}
+
+.dark-mode-toggle:hover {
+    transform: scale(1.1);
+}
+
+/* =================================
+   ダークモード
+   ================================= */
+body.dark-mode {
+    background-color: #1a1a2e;
+    color: #e0e0e0;
+}
+
+body.dark-mode header {
+    background: linear-gradient(135deg, #16213e, #1a1a2e);
+}
+
+body.dark-mode nav {
+    background: #16213e;
+}
+
+body.dark-mode section,
+body.dark-mode .column-article {
+    background: #16213e;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+body.dark-mode h2 {
+    color: #e0e0e0;
+    border-bottom-color: #3498db;
+}
+
+body.dark-mode h3 {
+    color: #5dade2;
+}
+
+body.dark-mode .example,
+body.dark-mode .tool-card,
+body.dark-mode .person-card,
+body.dark-mode .challenge-card,
+body.dark-mode .sf-work {
+    background: #1a1a2e;
+    border-color: #2c3e50;
+}
+
+body.dark-mode .timeline-item {
+    border-bottom-color: #2c3e50;
+}
+
+body.dark-mode a {
+    color: #5dade2;
+}
+
+body.dark-mode footer {
+    color: #888;
+}
+
+body.dark-mode table thead {
+    background: #16213e;
+}
+
+body.dark-mode table td {
+    border-bottom-color: #2c3e50;
+}
+
+body.dark-mode tbody tr:hover {
+    background: #1a1a2e;
+}
+
+body.dark-mode .dark-mode-toggle {
+    background: #f1c40f;
+    color: #1a1a2e;
+}
